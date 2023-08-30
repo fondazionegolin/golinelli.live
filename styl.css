@@ -50,6 +50,9 @@ body{
     font-weight: lighter;
     font-size: 20px;
 }
+.nav-link:hover {
+    color:rgb(255, 0, 64)!important;
+}
 .btn-primary {
     --bs-btn-bg: rgb(255, 0, 64); 
     --bs-btn-hover-bg: rgb(146, 0, 37);
@@ -60,4 +63,8 @@ body{
 .footer{
     position: relative;
     bottom:0;
+}
+
+.accordion {
+    --bs-accordion-active-bg: var(--bg-color-tertiary);
 }
