@@ -1,112 +1,147 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Golinelli LIVE - Home</title>
-  <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-  <!-- <script src="gallery.js" defer></script> -->
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="styl.css" rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <div class="logo" > <img src="live.png"></div>
-    <nav>
-      <ul>
-        <li><a id="home" href="index.html">Home</a></li>
-        <li><a id="esperienze" href="esperienze.html">Esperienze</a></li>
-        <li><a id="tutorial" href="#tutorial">Tutorial</a></li>
-        <li><a id="download" href="#download">Download</a></li>
-        <li><a id="configuratore" href="https://staging-backoffice.virtual-lab.fondazionegolinelli.it/">Configuratore</a></li>
-
-        <li><a id="contatti" href="contatti.html"  class="contatti-button">Contatti</a></li>
-      </ul>
-    </nav>
-</header>
-
-  <main>
-  
-    <div class="download-container-wrapper">
-
-    <section id="download" class="download-section">
-        <div class="container download-container">
-            <div class="icon">
-              <!-- Icona identificativa del client per visori Oculus -->
-              <!-- Sostituisci "path_to_icon.svg" con il percorso corretto dell'icona -->
-              <img src="vr-glasses.png" alt="Client per visori Oculus">
+<body class="d-flex flex-column vh-100">
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <img src="./Live.png" class="navbar-brand" style="max-height: 60px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./esperienze.html">Esperienze</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="https://fondazionegolin.github.io/LIVE_documentation/">Tutorial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link highlight" aria-current="page" href="./download.html">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./acquista.html">Acquista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="https://staging-backoffice.virtual-lab.fondazionegolinelli.it/crea/">Configuratore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./faq.html">FAQ</a>
+                    </li>
+                    <a class="btn btn-primary btn-sm">Contatti</a>
+                </ul>
             </div>
-            <table>
-          <!-- Container per il client per visori Oculus -->
-          <div class="container-title">
-            <!-- Titolo del container -->
-            <h2>Client per visori Oculus</h2>
-          </div>
-              <tr>
-                <th >Changelog</th>
-
-                <th>Versione</th>
-                <th>Dimensione</th>
-                <th>Data upload</th>
-                <th>Pulsante di download</th>
-              </tr>
-              <tr>
-                <!-- Inserisci qui i dettagli per il client per visori Oculus -->
-                <th class="changelog">Questa versione include le migliorie apportate sino all'8 giugno. </th>
-
-                <td>2.0.0</td>
-                <td>50 MB</td>
-                <td>23/07/2023</td>
-                <td><a href="https://www.oculus.com/experiences/quest/6381245378605432/" class="download-button">Download</a></td>
-              </tr>
-            </table>
-          </div>
-  
-          <div class="container download-container"">
-            <!-- Container per il pannello del docente -->
-            <div class="icon">
-                <!-- Icona identificativa del pannello del docente -->
-                <!-- Sostituisci "path_to_icon.svg" con il percorso corretto dell'icona -->
-                <img src="computer.png" alt="Pannello del docente">
-            </div>
-            <div class="container-title">
-                <!-- Titolo del container -->
-                <h2>Pannello docente per computer Windows</h2>
-              </div>
-            <table>
-              <tr>
-                <th >Changelog</th>
-                <th>Versione</th>
-                <th>Dimensione</th>
-                <th>Data upload</th>
-                <th>Pulsante di download</th>
-              </tr>
-              <tr>
-                <!-- Inserisci qui i dettagli per il pannello del docente -->
-                <th class="changelog">Questa versione include le migliorie apportate sino all'8 giugno. </th>
-                <td>1.0.0</td>
-                <td>30 MB</td>
-                <td>01/07/2023</td>
-                <td><a href="link_to_teacher_panel.exe" class="download-button">Download</a></td>
-              </tr>
-            </table>
-          </div>
         </div>
-      </section>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-content">
-      <img src="Logo-white.png".png" alt="Logo Fondazione Golinelli" class="golinelli-logo">
-      <p class="footer-text">&copy; 2023 Golinelli LIVE è un prodotto di Fondazione Golinelli e G-lab srl. Tutti i diritti riservati.</p>
-      <img src="imgs/g-lab.png" alt="Nuovo Logo" class="new-logo">
+    </nav>
+    <div class="d-flex flex-column text-center p-4 justify-content-center align-items-center">
+        <h1 class="highlight font-weight-bold mb-3 display-2"> Scarica Golinelli Live </h1>
+        <div class="col col-md-6 text-center">
+            <div class="col-lg rounded-5 shadow">
+                <div class="row p-3">
+                    <div class="col col-lg-3">
+                        <img src="./vr-glasses.png" style="max-width:100px; width:100%;" alt="Immagine 2">
+                    </div>
+                    <div class="col-lg v-100 d-flex flex-column text-left">
+                        <h2 class="highlight">Pannello docente</h2>
+                        <p>Qui potrai scaricare l'ultima versione del pannello docente</p>
+                    </div>
+                </div>
+                <table class="align-middle table p-3">
+                    <thead>
+                      <tr>
+                        <th scope="col">Changelog</th>
+                        <th scope="col">Versione</th>
+                        <th scope="col">Dimensione</th>
+                        <th scope="col">Download</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="#changelogTeacher" data-bs-toggle="collapse" role="button" class="nav-link cursor-pointer" >Apri</td>
+                        <td>2.0</td>
+                        <td>500MB</td>
+                        <td><button class="btn btn-primary"><i class="bi bi-cloud-download d-inline"></i> <p class="ms-2 d-inline">SCARICA</p></button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="col" style="height: 10px;"></div>
+                  <div id="changelogTeacher" class="p-3 container-fluid collapse">
+                    <p>Apportate migliore e bug fix, aggiunto strumento microscopio, termociclatore, vortex</p>
+                  </div>
+            </div>
+            <div class="col my-5"></div>
+            <div class="col-md rounded-5 shadow">
+                <div class="row p-3">
+                    <div class="col col-lg-3 col-md">
+                        <img src="./computer.png" style="max-width:100px; width:100%;" alt="Immagine 2">
+                    </div>
+                    <div class="col-lg v-100 d-flex flex-column text-left">
+                        <h2 class="highlight">Golinelli Live</h2>
+                        <p>Clicca qui sotto per andare sull'oculus store</p>
+                    </div>
+                </div>
+                <table class="align-middle table p-3">
+                    <thead>
+                      <tr>
+                        <th scope="col">Changelog</th>
+                        <th scope="col">Versione</th>
+                        <th scope="col">Dimensione</th>
+                        <th scope="col">Download</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="#changelogLive" data-bs-toggle="collapse" role="button" class="nav-link cursor-pointer" >Apri</td>
+                        <td>2.0</td>
+                        <td>1GB</td>
+                        <td><a href="https://www.meta.com/en-gb/experiences/6381245378605432/?utm_source=127.0.0.1&utm_medium=oculusredirect" class="btn btn-primary"><i class="bi bi-box-arrow-up-right d-inline "></i></i> <p class="ms-2 d-inline">Vai ad oculus</p></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="col" style="height: 10px;"></div>
+                  <div id="changelogLive" class="p-3 container-fluid collapse">
+                    <p>Migliorata la performance, apportate migliore e bug fix, aggiunto strumento microscopio, termociclatore, vortex</p>
+                  </div>
+            </div>
+        </div>
     </div>
-  </footer>
-  
 
+    <div class="d-flex flex-grow-1"></div>
+    <div class="row p-3  text-center footer mx-0
+        style=" background-color: #e6e6e6b2; backdrop-filter: blur(5px);">
+        <div class="col-auto">
+            <img src="./Logo.png" alt="Logo Fondazione Golinelli" style="height:50px;">
+        </div>
+        <div class="col d-flex v-100 ">
+            <p class="footer-text m-auto">&copy; 2023 Golinelli LIVE è un prodotto di Fondazione Golinelli e G-lab srl.
+                Tutti i
+                diritti riservati.</p>
+        </div>
+        <div class="col-auto">
+            <img src="./imgs/g-lab.png" alt="Nuovo Logo" style="height: 50px;">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
