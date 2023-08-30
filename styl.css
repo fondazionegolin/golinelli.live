@@ -8,6 +8,7 @@ body{
     --bs-body-font-family: "Asap Condensed", sans-serif !important; 
     --bs-primary-color: rgb(255, 0, 64);
     --bs-primary-text-emphasis: rgb(255, 0, 64);
+    height: 100vw;
 }
 
 .hero-content {
@@ -35,11 +36,13 @@ body{
 .btn {
     display: inline-block;
     font-size: 20px;
-    border-radius: 35px;
+    border-radius: 20px;
+    padding: 9px;
     border: none;
     color: #fff;
     font-style: normal;
     font-weight: 600;
+
 }
 
 .nav-link{
@@ -51,4 +54,10 @@ body{
     --bs-btn-bg: rgb(255, 0, 64); 
     --bs-btn-hover-bg: rgb(146, 0, 37);
     --bs-btn-active-bg: rgb(255, 44, 97);
+
+}
+
+.footer{
+    position: relative;
+    bottom:0;
 }
