@@ -7,7 +7,7 @@
             "url": "http://127.0.0.1:3000/index-bootstrap.html"
         },
         {
-            "type": "chrome",
+            "type": "msedge",
             "name": "http://127.0.0.1:3000/news-bootstrap.html",
             "request": "launch",
             "url": "http://127.0.0.1:3000/news-bootstrap.html"
