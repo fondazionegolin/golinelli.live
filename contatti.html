@@ -1,122 +1,168 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Golinelli LIVE - Home</title>
-  <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-  <!-- <script src="gallery.js" defer></script> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="styl.css" rel="stylesheet">
+  <title>Golinelli Live Contatti</title>
+  <link rel="icon" href="./favicon.png" type="image/x-icon">
 
 </head>
 
-<body>
-  <header>
-    <div class="logo" > <img src="live.png"></div>
-    <nav>
-      <ul>
-        <li><a id="home" href="index.html">Home</a></li>
-        <li><a id="esperienze" href="esperienze.html">Esperienze</a></li>
-        <li><a id="tutorial" href="#tutorial">Tutorial</a></li>
-        <li><a id="download" href="download.html">Download</a></li>
-        <li><a id="configuratore" href="https://staging-backoffice.virtual-lab.fondazionegolinelli.it/">Configuratore</a></li>
-        <li><a id="contatti" href="contatti.html"  class="contatti-button">Contatti</a></li>
-      </ul>
-    </nav>
-</header>
-
-  <main>
-  
-
-    <section class="team-section">
-        <div class="team-member">
-          <img src="imgs/ale.png" alt="Sviluppatore 1" >
-          <h3>Alessandro Saracino</h3>
-          <p>Biotecnologo e program manager per Fondazione Golinelli. Coordino lo sviluppo di Golinelli LiVE dalla sua nascita.</p>
-          <!-- Aggiungi qui icone di contatto per lo sviluppatore -->
-          <div class="contact-icons">
-            <a href="mailto:a.saracino@fondazionegolinelli.it"><img src="imgs/icons8-gmail.gif" alt="Email"></a>
+<body class="d-flex flex-column vh-100">
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <img src="./Live.png" class="navbar-brand" style="max-height: 60px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./esperienze.html">Esperienze</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"
+              href="https://fondazionegolin.github.io/LIVE_documentation/">Tutorial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./download.htmlù">Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./acquista.html">Acquista</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"
+              href="https://staging-backoffice.virtual-lab.fondazionegolinelli.it/crea/">Configuratore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link highlight" aria-current="page" href="./faq.html">FAQ</a>
+          </li>
+          <a class="btn btn-primary btn-sm" href="./contatti.html">Contatti</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="d-flex container-fluid text-center p-4 justify-content-center">
+    <div class="col col-xl-6">
+      <h1 class="highlight font-weight-bold mb-3 display-2">Contatti</h1>
+      <div class="row g-5">
+        <div class="col-md col-lg mh-100">
+          <div class="d-flex flex-column flex-grow-1 h-100 justify-content-centre align-items-centre p-3  rounded-5 shadow">
+            <div class="col-auto ">
+              <img class="border rounded-circle object-fit-cover" style="height:150px; width:150px;"
+                src="./imgs/ale.png" alt="Immagine 2">
+            </div>
+            <div class="col-lg text-container ">
+              <h4 class="highlight">Alessandro Saracino</h4>
+              <p>Biotecnologo e program manager per Fondazione Golinelli. Coordino lo sviluppo di Golinelli LiVE dalla
+                sua nascita.
+              </p>
+              <a href="mailto:a.saracino@fondazionegolinelli.it"><img src="imgs/icons8-gmail.gif" alt="Email"></a>
+            </div>
           </div>
         </div>
-  
-        
-
-          <div class="team-member">
-            <img src="imgs/baraldi.jpeg" alt="Sviluppatore 1" >
-            <h3>Matteo Baraldi</h3>
-            <p>Informatico esperto in Unity</p>
-            <!-- Aggiungi qui icone di contatto per lo sviluppatore -->
-            <div class="contact-icons">
+        <div class="col-md col-lg mh-100">
+          <div class="d-flex flex-column flex-grow-1 h-100 justify-content-centre align-items-centre p-3  rounded-5 shadow">
+            <div class="col-auto">
+              <img class="border rounded-circle object-fit-cover" style="height:150px; width:150px;"
+                src="./imgs/baraldi.jpeg" alt="Immagine 2">
+            </div>
+            <div class="col-lg text-container">
+              <h4 class="highlight">Matteo Baraldi</h4>
+              <p>Informatico esperto in Unity</p>
               <a href="mailto:a.saracino@fondazionegolinelli.it"><img src="imgs/icons8-gmail.gif" alt="Email"></a>
             </div>
           </div>
-
-          <div class="team-member">
-            <img src="imgs/minarini.jpeg" alt="Sviluppatore 1" >
-            <h3>Erik Minarini</h3>
-            <p>Informatico Esperto in Unity</p>
-            <!-- Aggiungi qui icone di contatto per lo sviluppatore -->
-            <div class="contact-icons">
+        </div>
+        <div class="col-md col-lg mh-100">
+          <div class="d-flex flex-column flex-grow-1 h-100 justify-content-centre align-items-centre p-3  rounded-5 shadow">
+           <div class="col-auto">
+              <img class="border rounded-circle object-fit-cover" style="height:150px; width:150px;"
+                src="imgs/minarini.jpeg" alt="Immagine 2">
+            </div>
+            <div class="col-lg text-container">
+              <h4 class="highlight">Erik Minarini</h4>
+              <p>Informatico Esperto in Unity</p>
               <a href="mailto:a.saracino@fondazionegolinelli.it"><img src="imgs/icons8-gmail.gif" alt="Email"></a>
             </div>
           </div>
-          
-          <div class="team-member">
-            <img src="imgs/novara.jpeg" alt="Sviluppatore 1" >
-            <h3>Claudia Novara</h3>
-            <p> 2D/3D e UX </p>
-            <!-- Aggiungi qui icone di contatto per lo sviluppatore -->
-            <div class="contact-icons">
+        </div>
+      </div>
+      <div class="row mt-2 g-5">
+        <div class="col-md col-lg mh-100">
+          <div class="d-flex flex-column h-100 justify-content-centre align-items-centre p-3  rounded-5 shadow">
+            <div class="col-auto">
+              <img class="border rounded-circle object-fit-cover" style="height:150px; width:150px;"
+                src="imgs/novara.jpeg" alt="Immagine 2">
+            </div>
+            <div class="col-lg text-container">
+              <h4 class="highlight">Claudia Novara</h4>
+              <p>2D/3D e UX/UI</p>
               <a href="mailto:a.saracino@fondazionegolinelli.it"><img src="imgs/icons8-gmail.gif" alt="Email"></a>
             </div>
           </div>
-  
-          <div class="team-member">
-            <img src="imgs/polmonari.jpeg" alt="Sviluppatore 1" >
-            <h3> Luca Polmonari</h3>
-            <p>Ingegnere informatico esperto in tecnologie AR/VR</p>
-            <!-- Aggiungi qui icone di contatto per lo sviluppatore -->
-            <div class="contact-icons">
+        </div>
+        <div class="col-md col-lg mh-100">
+          <div class="d-flex flex-column h-100 justify-content-centre align-items-centre p-3  rounded-5 shadow">
+            <div class="col-auto">
+              <img class="border rounded-circle object-fit-cover" style="height:150px; width:150px;"
+                src="imgs/polmonari.jpeg" alt="Immagine 2">
+            </div>
+            <div class="col-lg text-container">
+              <h4 class="highlight">Luca Polmonari</h4>
+              <p>Ingegnere informatico esperto in tecnologie AR/VR</p>
               <a href="mailto:a.saracino@fondazionegolinelli.it"><img src="imgs/icons8-gmail.gif" alt="Email"></a>
             </div>
           </div>
-        <!-- Aggiungi altri membri del team qui -->
-        <div class="team-member">
-            <img src="imgs/silva.png" alt="Sviluppatore 1" >
-            <h3>Luca Silva</h3>
-            <p>Tecnico sviluppatore esperto in tecnologie AR/VR </p>
-            <!-- Aggiungi qui icone di contatto per lo sviluppatore -->
-            <div class="contact-icons">
+        </div>
+        <div class="col-md col-lg mh-100">
+          <div class="d-flex flex-column h-100 justify-content-centre align-items-centre p-3  rounded-5 shadow">
+            <div class="col-auto">
+              <img class="border rounded-circle object-fit-cover" style="height:150px; width:150px;"
+                src="imgs/silva.png" alt="Immagine 2">
+            </div>
+            <div class="col-lg text-container">
+              <h4 class="highlight">Luca Silva</h4>
+              <p>Tecnico sviluppatore esperto in tecnologie AR/VR</p>
               <a href="mailto:a.saracino@fondazionegolinelli.it"><img src="imgs/icons8-gmail.gif" alt="Email"></a>
             </div>
           </div>
-  
-          <div class="team-member">
-            <img src="imgs/balasso.jpeg" alt="Sviluppatore 1" >
-            <h3>Matteo Balassso</h3>
-            <p>Ingegnere del software e musicista. Sound design di Golinelli LiVE </p>
-            <!-- Aggiungi qui icone di contatto per lo sviluppatore -->
-            <div class="contact-icons">
-              <a href="mailto:a.saracino@fondazionegolinelli.it"><img src="imgs/icons8-gmail.gif" alt="Email"></a>
-            </div>
-          </div>
-
-      </section>
-
-
-
-  </main>
-
-  <footer>
-    <div class="footer-content">
-      <img src="Logo-white.png".png" alt="Logo Fondazione Golinelli" class="golinelli-logo">
-      <p class="footer-text">&copy; 2023 Golinelli LIVE è un prodotto di Fondazione Golinelli e G-lab srl. Tutti i diritti riservati.</p>
-      <img src="imgs/g-lab.png" alt="Nuovo Logo" class="new-logo">
+        </div>
+      </div>
     </div>
-  </footer>
-  
+  </div>
 
+  <div class="d-block" style="min-height: 100px !important;"></div>
+  <div class="row p-3 text-center footer mx-0 p-absolute fixed-bottom">
+    <div class="col-auto">
+      <img src="./Logo.png" alt="Logo Fondazione Golinelli" style="height:40px;">
+    </div>
+    <div class="col d-flex v-100 ">
+      <p class="footer-text m-auto">&copy; 2023 Golinelli LIVE è un prodotto di Fondazione Golinelli e G-lab srl.
+        Tutti i
+        diritti riservati.</p>
+    </div>
+    <div class="col-auto">
+      <img src="./imgs/g-lab.png" alt="Nuovo Logo" style="height: 40px;">
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>
 </body>
 
 </html>
