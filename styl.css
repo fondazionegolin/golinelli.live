@@ -79,9 +79,6 @@ body{
 
 /* xs < 768 */
 @media screen and (max-width: 767px) {
-  body {
-      font-size: 1.6em;
-  }
   .footer{
     position: relative;
   }
@@ -89,25 +86,7 @@ body{
 
 /* sm */
 @media screen and (min-width: 768px) {
-  body {
-      font-size: 1.3em;
-  }
   .footer{
     position: fixed;
-  }
-}
-
-/* md */
-@media screen and (min-width: 992px) {
-  body {
-      font-size: 1.3em;
-  }
-
-}
-
-/* lg */
-@media screen and (min-width: 1200px) {
-  body {
-      font-size: 1.3em;
   }
 }
