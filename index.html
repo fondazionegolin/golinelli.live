@@ -11,6 +11,7 @@
 </head>
 
 <body class="d-flex flex-column vh-100">
+
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
             <img src="./live.png" class="navbar-brand" style="max-height: 60px;">
@@ -31,7 +32,8 @@
                         <a class="nav-link active" aria-current="page" href="./esperienze.html">Esperienze</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="https://fondazionegolin.github.io/LIVE_documentation/">Tutorial</a>
+                        <a class="nav-link active" aria-current="page"
+                            href="https://fondazionegolin.github.io/LIVE_documentation/">Tutorial</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./download.html">Download</a>
@@ -40,25 +42,44 @@
                         <a class="nav-link active" aria-current="page" href="./acquista.html">Acquista</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="https://staging-backoffice.virtual-lab.fondazionegolinelli.it/crea/">Configuratore</a>
+                        <a class="nav-link active" aria-current="page"
+                            href="https://staging-backoffice.virtual-lab.fondazionegolinelli.it/crea/">Configuratore</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./faq.html">FAQ</a>
                     </li>
-                    <a class="btn btn-primary btn-sm" href="./contatti.html">Contatti</a>
+                    <a role="button" class="btn btn-primary btn-sm" href="./contatti.html">Contatti</a>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="modal modal-xl fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <video class="object-fit-scale w-100" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> 
+            </div>
+          </div>
+        </div>
+      </div>
+
     <div class="container text-center p-4 ">
-        <h1 class="highlight font-weight-bold mb-3 display-2">Golinelli LIVE Virtual Experience</h1>
         <div class="d-flex position-relative mb-5 row my-3">
             <div class="d-flex flex-column" style="height: 500px; max-width: 100%; ">
                 <div class=" hero-content flex-column d-flex flex-grow-1 justify-content-center align-items-center">
+                    <h1 class="neom highlight font-weight-bold mb-3 display-2">Golinelli Live</h1>
+
                     <h1 class="" style="font-weight:bold;"> Esplora il Laboratorio Virtuale </h1>
-                    <p class="text-white" style="font-weight:300; font-size: 26px;">Benvenuti su Golinelli LIVE, la
-                        piattaforma di realtà virtuale che porta il laboratorio di scienze in classe. </p>
-                    <button class="btn btn-primary">Scopri di più</button>
+                    <p class="text-white" style="font-weight:300; font-size: 26px;">Benvenuti sulla piattaforma di
+                        realtà virtuale che porta il laboratorio di scienze in classe. </p>
+                    <button data-bs-toggle="modal" data-bs-target="#videoModal" class="btn btn-primary">Scopri di
+                        più</button>
                 </div>
             </div>
             <video src="./video.mp4" class="object-fit-cover  rounded-5"
