@@ -13,7 +13,7 @@ body{
 
 .hero-content {
     position: absolute;
-    top:50%;
+    top:75%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 26px;
@@ -24,6 +24,14 @@ body{
     z-index: 1;
 }
 
+.neom {
+font-size: 68px;
+  font-weight: bolder;
+
+}
+
+
+
 /* html{
     font-size: 18px;
 } */
@@ -32,7 +40,7 @@ body{
 }
 
 .highlight {
-    color:rgb(255, 0, 64);
+    color:rgb(255, 34, 89);
 }
 
 
