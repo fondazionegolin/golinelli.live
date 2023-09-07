@@ -31,10 +31,13 @@ font-size: 68px;
 }
 
 
-
 /* html{
     font-size: 18px;
 } */
+
+p{
+    font-size: 1.2rem;
+}
 .navbar-toggler{
     border: 1px solid;
 }
