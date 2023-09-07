@@ -46,6 +46,9 @@ p{
     color:rgb(255, 34, 89);
 }
 
+.highlight-bg {
+    background-color:rgb(255, 34, 89) !important;
+}
 
 .btn {
     display: inline-block;

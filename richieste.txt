@@ -1,0 +1,3 @@
+aggiungere tasto di ritorno al sito di golinelli live dentro mkdocs(provare con iframe)
+
+Creazione piccolo script ajax per generazione e catalogazione notize
